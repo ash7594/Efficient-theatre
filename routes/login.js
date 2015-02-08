@@ -1,6 +1,6 @@
 var login = {
 	panel: function(req,res) {
-		res.send('pages/login');
+		res.render('pages/login');
 	}
 };
 
