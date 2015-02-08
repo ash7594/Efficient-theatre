@@ -5,6 +5,8 @@ app.set("view engine","ejs");
 app.set("views", __dirname + "/views");
 app.set("view options", { layout: false });
 
+app.use(express.static(__dirname + 'public/'));
+
 app.get('/', function(req,res) {
 	res.render('pages/index');
 });
