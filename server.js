@@ -5,7 +5,7 @@ app.set("view engine","ejs");
 app.set("views", __dirname + "/views");
 app.set("view options", { layout: false });
 
-app.use(express.static(__dirname + 'public/'));
+app.use(express.static(__dirname + '/public'));
 
 var admin = require("./routes/admin");
 var login = require("./routes/login");
